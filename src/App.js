@@ -1,12 +1,37 @@
 import React from "react";
 
+const Greeting = () => {
+  return <p>Hello, there, Good to see you!</p>;
+};
+
+//Avatar component
+const Avatar = () => {
+  return <img className="card-img" src="https://picsum.photos/id/1/200/300" alt="Profile" />;
+};
+
+//profile card component
+const UserProfileCard = () => {
+  return (
+    <div className="card">
+      <Avatar />
+      <div className="user-name">Lorem Ipsum</div>
+      <p className="user-bio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate
+      </p>
+    </div>
+  );
+};
+
 const App = () => {
   //arrow function component
   return (
-    <div className="header">
-      <h1>Welcome to My React App</h1>
-      <p>This is a simple React application.</p>
-    </div>
+    <section className="main-page">
+      <Greeting />
+      <UserProfileCard />
+    </section>
   );
 };
 
