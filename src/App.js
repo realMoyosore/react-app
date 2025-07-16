@@ -10,7 +10,7 @@ const Avatar = () => {
 };
 
 //profile card component
-const UserProfileCard = () => {
+const UserProfileCard = () => { //PascalCase => UserProfileCard
   return (
     <div className="card">
       <Avatar />
