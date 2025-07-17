@@ -1,5 +1,5 @@
-import React from "react";
 import Avatar from "./avatar";
+import "../assets/styles/card.css";
 
 const UserProfileCard = () => {
   //PascalCase => UserProfileCard
