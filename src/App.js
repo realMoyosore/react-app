@@ -21,28 +21,30 @@ const UserProfileCard = () => { //PascalCase => UserProfileCard
         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
         voluptate
       </p>
-    </div>
+    </div> 
   );
 };
 
 const ListExample = () => {
 return (
-    <ol>
+
       <li>BMW</li>
-      <li>BENZ</li>
-      <li>AUDI</li>
-    </ol>
+      // <li>BENZ</li>
+      // <li>AUDI</li>
   )
 }
 
 const App = () => {
   //arrow function component
   return (
-    <section className="main-page">
-      <Greeting />
-      <UserProfileCard />
+    // <section className="main-page">
+    //   <Greeting />
+    //   <UserProfileCard />
+    //   <ListExample />
+    // </section>
+    <ol>
       <ListExample />
-    </section>
+    </ol>
   );
 };
 
