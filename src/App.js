@@ -20,14 +20,20 @@ const UserProfileCard = () => { //PascalCase => UserProfileCard
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
         voluptate
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate
       </p>
     </div>
   );
 };
+
+const ListExample = () => {
+return (
+    <ol>
+      <li>BMW</li>
+      <li>BENZ</li>
+      <li>AUDI</li>
+    </ol>
+  )
+}
 
 const App = () => {
   //arrow function component
@@ -35,6 +41,7 @@ const App = () => {
     <section className="main-page">
       <Greeting />
       <UserProfileCard />
+      <ListExample />
     </section>
   );
 };
