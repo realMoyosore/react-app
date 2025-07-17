@@ -12,10 +12,3 @@
   color: #333;
   margin: 20px auto;
 }
-
-.card-img {
-  border-radius: 120px;
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
-}
