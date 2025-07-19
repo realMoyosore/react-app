@@ -9,6 +9,28 @@
   height: 100vh;
   font-size: 1.5rem;
   text-align: center;
+  display: grid;
+  gap: 20px;
+}
+
+.action-btn {
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 5px;
+}
+
+.action-btn:hover {
+  background-color: blue;
+  font-weight: 800;
+}
+
+.counter-label {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 

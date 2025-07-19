@@ -35,13 +35,29 @@ import React from "react";
 //   );
 // });
 
-
-const handleClick = (event) => {
-  console.log("Button Clicked")
-}
+// const handleClick = (event) => {
+//   console.log("Button Clicked")
+// }
 
 const App = () => {
   //arrow function component
+
+  //state...
+  const [counter, setCounter] = useState(0);
+
+  //Handle increment...
+  const handleIncrement = (event) => {
+    event.preventDefault();
+    setCounter((prev) => prev + 1);
+  };
+
+  //Handle decrement...
+  const handelDecrement = (event) => {
+    event.preventDefault();
+    setCounter((prev) => prev - 1);
+  };
+
+  //Render...
   return (
     <section className="main-page">
       {/* <Greeting />
@@ -63,7 +79,14 @@ const App = () => {
         Click Me
       </button> */}
 
-      <button onClick={handleClick}>Click Me</button>
+      {/* <button onClick={handleClick}>Click Me</button> */}
+      <div className="counter-label">{counter}</div>
+      <button className="action-btn" onClick={handleIncrement}>
+        Increment
+      </button>
+      <button className="action-btn" onClick={handelDecrement}>
+        Decrement
+      </button>
     </section>
   );
 };
