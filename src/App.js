@@ -101,13 +101,13 @@ const App = () => {
 
   return (
     <section className="form-container">
-      <form onSubmit={event => {
+      <form onSubmit={(event) => {
         event.preventDefault();
         console.log("Form Submitted!");
       }}>
-        <input type="text" placeholder="Enter your name" />
-        <input type="text" placeholder="Enter your email" />
-        <input type="text" placeholder="Enter your phone" />
+        <input type="text" placeholder="Enter your name"  name="name"/>
+        <input type="text" placeholder="Enter your email" name="email" />
+        <input type="tel" placeholder="Enter your phone" name="tel" />
         <button type="submit">Submit</button>
       </form>
     </section>
