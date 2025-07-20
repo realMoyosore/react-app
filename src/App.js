@@ -103,7 +103,8 @@ const App = () => {
     <section className="form-container">
       <form onSubmit={(event) => {
         event.preventDefault();
-        console.log("Form Submitted!");
+        const { name, email, tel } = event.target.elements;
+        alert(`Hello ${name.value}! Your email is: ${email.value} and your phone number is: ${tel.value}.`);
       }}>
         <input type="text" placeholder="Enter your name"  name="name"/>
         <input type="text" placeholder="Enter your email" name="email" />
