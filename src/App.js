@@ -94,17 +94,20 @@ import React from "react";
 
 const App = () => {
   //Handle Change...
-  const handleChange = (event) => {
-    event.preventDefault();
-    console.log("Value :", event.target.value);
-  };
+  // const handleChange = (event) => {
+  //   event.preventDefault();
+  //   console.log("Value :", event.target.value);
+  // };
 
   return (
     <section className="form-container">
-      <form>
-        <input onChange={handleChange} type="text" placeholder="Enter your name" />
-        <input onChange={handleChange} type="text" placeholder="Enter your email" />
-        <input onChange={handleChange} type="text" placeholder="Enter your phone" />
+      <form onSubmit={event => {
+        event.preventDefault();
+        console.log("Form Submitted!");
+      }}>
+        <input type="text" placeholder="Enter your name" />
+        <input type="text" placeholder="Enter your email" />
+        <input type="text" placeholder="Enter your phone" />
         <button type="submit">Submit</button>
       </form>
     </section>
