@@ -1,5 +1,5 @@
-import React from "react";
-// import { useState } from "react";
+// import React from "react";
+import { useState } from "react";
 // // import Greeting from "./components/greetings";
 // // import UserProfileCard from "./components/userProfileCard";
 // // import ListEx from "./components/list";
@@ -99,18 +99,34 @@ const App = () => {
   //   console.log("Value :", event.target.value);
   // };
 
+  // return (
+  //   <section className="form-container">
+  //     <form onSubmit={(event) => {
+  //       event.preventDefault();
+  //       const { name, email, tel } = event.target.elements;
+  //       alert(`Hello ${name.value}! Your email is: ${email.value} and your phone number is: ${tel.value}.`);
+  //     }}>
+  //       <input type="text" placeholder="Enter your name"  name="name"/>
+  //       <input type="text" placeholder="Enter your email" name="email" />
+  //       <input type="tel" placeholder="Enter your phone" name="tel" />
+  //       <button type="submit">Submit</button>
+  //     </form>
+  //   </section>
+  // );
+
+  const { state, setState } = useState("Hello, World!");
+
+  const handleMouseOver = (event) => {
+    setState("You hovered over the title!");
+    console.log("Mouse Over Event:", event);
+  };
+
   return (
-    <section className="form-container">
-      <form onSubmit={(event) => {
-        event.preventDefault();
-        const { name, email, tel } = event.target.elements;
-        alert(`Hello ${name.value}! Your email is: ${email.value} and your phone number is: ${tel.value}.`);
-      }}>
-        <input type="text" placeholder="Enter your name"  name="name"/>
-        <input type="text" placeholder="Enter your email" name="email" />
-        <input type="tel" placeholder="Enter your phone" name="tel" />
-        <button type="submit">Submit</button>
-      </form>
+    <section className="main-page">
+      <h1 onMouseOver={handleMouseOver} className="title">
+        {state}
+        Welcome to My React App
+      </h1>
     </section>
   );
 };
