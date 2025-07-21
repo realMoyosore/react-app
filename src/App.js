@@ -118,7 +118,9 @@ const App = () => {
 
   const handleMouseOver = (event) => {
     setState("You hovered over the title!");
-    console.log("Mouse Over Event:", event);
+    setTimeout(() => {
+      setState("Hello, World!");
+    }, 1000);
   };
 
   return (
