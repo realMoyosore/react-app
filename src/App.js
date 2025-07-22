@@ -136,40 +136,80 @@ import React from "react";
 // export default App;
 // // // This is a functional component that returns a simple JSX structure
 
-const Car = ({ data }) => {
-  const { brand, color, model, engine } = data;
+
+// //React Props
+// const Car = ({ data }) => {
+//   const { brand, color, model, engine } = data;
+//   return (
+//     <div className="car">{`I drive a ${model} ${color} ${brand}, which is powered by a ${engine} engine.`}</div>
+//   );
+// };
+
+// const App = () => {
+//   const cars = [
+//     {
+//       brand: "BMW",
+//       color: "Charcoal black",
+//       model: "2021",
+//       engine: "v6 turbo",
+//     },
+//     {
+//       brand: "Benz",
+//       color: "black",
+//       model: "2022",
+//       engine: "v8",
+//     },
+//     {
+//       brand: "Jeep",
+//       color: "White",
+//       model: "2024",
+//       engine: "v6",
+//     },
+//   ];
+
+//   const listOfCars = cars.map((car) => {
+//     return <Car data={car} />;
+//   });
+
+//   return <section className="main-page">{listOfCars}</section>;
+// };
+
+// export default App;
+
+
+//Conditional Rendering
+
+//Loader component...
+const Loader = () => {
+  return <div className="loader">Loading...</div>;
+};
+
+//Content component...
+const Content = () => {
   return (
-    <div className="car">{`I drive a ${model} ${color} ${brand}, which is powered by a ${engine} engine.`}</div>
+    <div className="content">
+      <p>Enim ex culpa velit deserunt in. Laborum minim aute qui fugiat incididunt dolore fugiat culpa pariatur ad velit anim ad ea. Minim commodo veniam dolor enim cillum id. Reprehenderit aliqua elit et aute commodo proident officia nulla officia enim fugiat. Sint cillum cupidatat do et ipsum excepteur esse magna ullamco tempor ipsum mollit velit et. Reprehenderit laborum ea veniam veniam amet voluptate tempor minim sit mollit reprehenderit qui laboris laborum.</p>
+    </div>
   );
-};
+}
 
+//Root component
 const App = () => {
-  const cars = [
-    {
-      brand: "BMW",
-      color: "Charcoal black",
-      model: "2021",
-      engine: "v6 turbo",
-    },
-    {
-      brand: "Benz",
-      color: "black",
-      model: "2022",
-      engine: "v8",
-    },
-    {
-      brand: "Jeep",
-      color: "White",
-      model: "2024",
-      engine: "v6",
-    },
-  ];
+  
+  //State to manage loading...
+  const [isLoading, setIsLoading] = React.useState(true);
 
-  const listOfCars = cars.map((car) => {
-    return <Car data={car} />;
-  });
-
-  return <section className="main-page">{listOfCars}</section>;
-};
+  //Set a timeout to simulate data loading...
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 5000);
+  
+  //Rendering state...
+  return (
+    <section className="main-page">
+      {isLoading ? <Loader /> : <Content />}
+    </section>
+  );
+}
 
 export default App;
