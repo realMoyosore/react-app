@@ -1,5 +1,5 @@
-// import React from "react";
-import { useState } from "react";
+import React from "react";
+// import { useState } from "react";
 // // import Greeting from "./components/greetings";
 // // import UserProfileCard from "./components/userProfileCard";
 // // import ListEx from "./components/list";
@@ -114,23 +114,23 @@ const App = () => {
   //   </section>
   // );
 
-  const { state, setState } = useState("Hello, World!");
+//   const { state, setState } = useState("Hello, World!");
 
-  const handleMouseOver = (event) => {
-    setState("You hovered over the title!");
-    setTimeout(() => {
-      setState("Hello, World!");
-    }, 1000);
-  };
+//   const handleMouseOver = (event) => {
+//     setState("You hovered over the title!");
+//     setTimeout(() => {
+//       setState("Hello, World!");
+//     }, 1000);
+//   };
 
-  return (
-    <section className="main-page">
-      <h1 onMouseOver={handleMouseOver} className="title">
-        {state}
-        Welcome to My React App
-      </h1>
-    </section>
-  );
+//   return (
+//     <section className="main-page">
+//       <h1 onMouseOver={handleMouseOver} className="title">
+//         {state}
+//         Welcome to My React App
+//       </h1>
+//     </section>
+//   );
 };
 
 export default App;
