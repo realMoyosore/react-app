@@ -144,19 +144,32 @@ const Car = ({ data }) => {
 };
 
 const App = () => {
-  return (
-    <section className="main-page">
-      <Car
-        data={{
-          brand: "BMW",
-          color: "Charcoal black",
-          model: "2021",
-          engine: "v6 turbo",
-        }}
-      />
-      ;
-    </section>
-  );
+  const cars = [
+    {
+      brand: "BMW",
+      color: "Charcoal black",
+      model: "2021",
+      engine: "v6 turbo",
+    },
+    {
+      brand: "Benz",
+      color: "black",
+      model: "2022",
+      engine: "v8",
+    },
+    {
+      brand: "Jeep",
+      color: "White",
+      model: "2024",
+      engine: "v6",
+    },
+  ];
+
+  const listOfCars = cars.map((car) => {
+    return <Car data={car} />;
+  });
+
+  return <section className="main-page">{listOfCars}</section>;
 };
 
 export default App;
