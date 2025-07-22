@@ -136,19 +136,27 @@ import React from "react";
 // export default App;
 // // // This is a functional component that returns a simple JSX structure
 
-
-const Car = ({brand, color, model, engine}) => {
-  return <div className="car">{
-    `I drive a ${model} ${color} ${brand}, which is powered by a ${engine} engine.`
-  }</div>
-}
+const Car = ({ data }) => {
+  const { brand, color, model, engine } = data;
+  return (
+    <div className="car">{`I drive a ${model} ${color} ${brand}, which is powered by a ${engine} engine.`}</div>
+  );
+};
 
 const App = () => {
   return (
     <section className="main-page">
-    <Car brand="BMW" color="Charcoal black" model="2021" engine="v6 turbo"/>
+      <Car
+        data={{
+          brand: "BMW",
+          color: "Charcoal black",
+          model: "2021",
+          engine: "v6 turbo",
+        }}
+      />
+      ;
     </section>
-  )
-}
+  );
+};
 
 export default App;
