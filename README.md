@@ -81,25 +81,28 @@ This is a simple React application created as part of the AltSchool Africa 2nd S
 ## Getting Started
 
 1. **Clone the repository:**
+
     ```bash
     git clone <repository-url>
     cd first-reactapp
     ```
 
 2. **Install dependencies:**
+
     ```bash
     npm install
     ```
 
 3. **Start the development server:**
+
     ```bash
     npm start
     ```
 
 ## Folder Structure
 
-```
-first-reactapp/
+``` text
+first-reactapp
 ├── node_modules/
 ├── public/
 ├── src/
