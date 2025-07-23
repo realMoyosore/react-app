@@ -67,4 +67,58 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Project Overview
+
+This is a simple React application created as part of the AltSchool Africa 2nd Semester curriculum. It serves as a starting point for learning React fundamentals, experimenting with components, and building interactive user interfaces.
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+## Getting Started
+
+1. **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd first-reactapp
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server:**
+    ```bash
+    npm start
+    ```
+
+## Folder Structure
+
+```
+first-reactapp/
+├── node_modules/
+├── public/
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
+```
+
+- `src/` contains the source code for your React app.
+- `public/` contains the static assets and the HTML template.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
