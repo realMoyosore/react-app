@@ -184,7 +184,7 @@ const Loader = () => {
   return <div className="loader">Loading...</div>;
 };
 
-//Content component...
+//Content component
 const Content = () => {
   return (
     <div className="content">
@@ -199,12 +199,12 @@ const App = () => {
   //State to manage loading...
   const [isLoading, setIsLoading] = React.useState(true);
 
-  //Set a timeout to simulate data loading...
+  //Set a timeout to simulate data loading
   setTimeout(() => {
     setIsLoading(false);
   }, 5000);
   
-  //Rendering state...
+  //Rendering state
   return (
     <section className="main-page">
       {isLoading ? <Loader /> : <Content />}
