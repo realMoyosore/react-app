@@ -93,51 +93,51 @@ import React from "react";
 // // };
 
 // const App = () => {
-//   //Handle Change...
-//   // const handleChange = (event) => {
-//   //   event.preventDefault();
-//   //   console.log("Value :", event.target.value);
-//   // };
+  //Handle Change...
+  // const handleChange = (event) => {
+  //   event.preventDefault();
+  //   console.log("Value :", event.target.value);
+  // };
 
-//   // return (
-//   //   <section className="form-container">
-//   //     <form onSubmit={(event) => {
-//   //       event.preventDefault();
-//   //       const { name, email, tel } = event.target.elements;
-//   //       alert(`Hello ${name.value}! Your email is: ${email.value} and your phone number is: ${tel.value}.`);
-//   //     }}>
-//   //       <input type="text" placeholder="Enter your name"  name="name"/>
-//   //       <input type="text" placeholder="Enter your email" name="email" />
-//   //       <input type="tel" placeholder="Enter your phone" name="tel" />
-//   //       <button type="submit">Submit</button>
-//   //     </form>
-//   //   </section>
-//   // );
+  // return (
+  //   <section className="form-container">
+  //     <form onSubmit={(event) => {
+  //       event.preventDefault();
+  //       const { name, email, tel } = event.target.elements;
+  //       alert(`Hello ${name.value}! Your email is: ${email.value} and your phone number is: ${tel.value}.`);
+  //     }}>
+  //       <input type="text" placeholder="Enter your name"  name="name"/>
+  //       <input type="text" placeholder="Enter your email" name="email" />
+  //       <input type="tel" placeholder="Enter your phone" name="tel" />
+  //       <button type="submit">Submit</button>
+  //     </form>
+  //   </section>
+  // );
 
-// //   const { state, setState } = useState("Hello, World!");
+//   const { state, setState } = useState("Hello, World!");
 
-// //   const handleMouseOver = (event) => {
-// //     setState("You hovered over the title!");
-// //     setTimeout(() => {
-// //       setState("Hello, World!");
-// //     }, 1000);
-// //   };
+//   const handleMouseOver = (event) => {
+//     setState("You hovered over the title!");
+//     setTimeout(() => {
+//       setState("Hello, World!");
+//     }, 1000);
+//   };
 
-// //   return (
-// //     <section className="main-page">
-// //       <h1 onMouseOver={handleMouseOver} className="title">
-// //         {state}
-// //         Welcome to My React App
-// //       </h1>
-// //     </section>
-// //   );
+//   return (
+//     <section className="main-page">
+//       <h1 onMouseOver={handleMouseOver} className="title">
+//         {state}
+//         Welcome to My React App
+//       </h1>
+//     </section>
+//   );
 // };
 
 // export default App;
-// // // This is a functional component that returns a simple JSX structure
+// This is a functional component that returns a simple JSX structure
 
 
-// //React Props
+//React Props
 // const Car = ({ data }) => {
 //   const { brand, color, model, engine } = data;
 //   return (
