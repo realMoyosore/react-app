@@ -189,6 +189,7 @@ const Content = () => {
   return (
     <div className="content">
       <p>Enim ex culpa velit deserunt in. Laborum minim aute qui fugiat incididunt dolore fugiat culpa pariatur ad velit anim ad ea. Minim commodo veniam dolor enim cillum id. Reprehenderit aliqua elit et aute commodo proident officia nulla officia enim fugiat. Sint cillum cupidatat do et ipsum excepteur esse magna ullamco tempor ipsum mollit velit et. Reprehenderit laborum ea veniam veniam amet voluptate tempor minim sit mollit reprehenderit qui laboris laborum.</p>
+      <p>Enim ex culpa velit deserunt in. Laborum minim aute qui fugiat incididunt dolore fugiat culpa pariatur ad velit anim ad ea. Minim commodo veniam dolor enim cillum id. Reprehenderit aliqua elit et aute commodo proident officia nulla officia enim fugiat. Sint cillum cupidatat do et ipsum excepteur esse magna ullamco tempor ipsum mollit velit et. Reprehenderit laborum ea veniam veniam amet voluptate tempor minim sit mollit reprehenderit qui laboris laborum.</p>
     </div>
   );
 }
