@@ -10,6 +10,8 @@ root.render(
   </React.StrictMode>
 );
 
+
+// Alternative code
 // ReactDOM.render(
 //   <React.StrictMode>
 //     <App />
