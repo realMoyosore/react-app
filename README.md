@@ -83,7 +83,7 @@ This is a simple React application created as part of the AltSchool Africa 2nd S
 1. **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/realMoyosore/react-app
     cd first-reactapp
     ```
 
