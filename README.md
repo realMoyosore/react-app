@@ -76,7 +76,7 @@ This is a simple React application created as part of the AltSchool Africa 2nd S
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14 or higher recommended)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [npm](https://www.npmjs.com/)
 
 ## Getting Started
 
