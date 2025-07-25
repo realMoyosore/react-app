@@ -84,7 +84,7 @@ This is a simple React application created as part of the AltSchool Africa 2nd S
 
     ```bash
     git clone https://github.com/realMoyosore/react-app
-    cd first-reactapp
+    cd react-app
     ```
 
 2. **Install dependencies:**
@@ -102,7 +102,7 @@ This is a simple React application created as part of the AltSchool Africa 2nd S
 ## Folder Structure
 
 ``` text
-first-reactapp
+react-app
 ├── node_modules/
 ├── public/
 ├── src/
