@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 // import Greeting from "./components/greetings";
 // import UserProfileCard from "./components/userProfileCard";
 // import ListEx from "./components/list";
@@ -218,9 +217,12 @@ import { useState } from "react";
 const App = () => {
   const [count, setCount] = useState(0);
 
-  return
+  return (
   <section className="main-page">
     <h1>Count: {count}</h1>
     <button onClick={() => setCount(count + 1)}>Increment</button>
-  </section>
+    </section>
+  );
 }
+
+export default App;
