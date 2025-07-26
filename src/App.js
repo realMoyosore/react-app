@@ -1,5 +1,5 @@
 import React from "react";
-// import { useState } from "react";
+import { useState } from "react";
 // import Greeting from "./components/greetings";
 // import UserProfileCard from "./components/userProfileCard";
 // import ListEx from "./components/list";
@@ -215,3 +215,12 @@ import React from "react";
 
 // export default App;
 
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  return
+  <section className="main-page">
+    <h1>Count: {count}</h1>
+    <button onClick={() => setCount(count + 1)}>Increment</button>
+  </section>
+}
