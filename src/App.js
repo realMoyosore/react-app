@@ -11,7 +11,7 @@ const CounterButtons = () => {
   );
 }
 
-export default MyApp = () => {
+export default function MyApp() {
   return (
     <>
       <h1>Counters that updated separately</h1>
