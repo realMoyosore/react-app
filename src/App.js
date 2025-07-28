@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-const CounterButtons = () => {
-  const [count, setCount] = useState(0);
+const CounterButtons = ({ count, setCount }) => {  
 
   const increment = () => {
     setCount(count + 1);
@@ -20,10 +19,12 @@ const CounterButtons = () => {
 }
 
 export default function MyApp() {
+const [count, setCount] = useState(0);
+
   return (
     <>
       <h1>Count Up {count} Count Down</h1>
-      <CounterButtons />
+      <CounterButtons count={count} setCount={setCount}/>
     </>
   );
 }
