@@ -10,7 +10,7 @@ const CounterButtons = ({ count, setCount }) => {
     setCount(count - 1);
   }
 
-  // Additional conditions to display different messages based on count
+  // Conditions to display different messages based on count
 
   return (
     <>
