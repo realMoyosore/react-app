@@ -126,12 +126,6 @@ This project is licensed for education under AltSchool
 
 ---
 
-## Features
-
-- Interactive UI built with React components
-- Fast development workflow using Create React App
-- Easy customization and extension for learning purposes
-
 ## Contact
 
 For questions or feedback, please reach out via [GitHub Issues](https://github.com/realMoyosore/react-app/issues).
