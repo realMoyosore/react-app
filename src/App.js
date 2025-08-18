@@ -1,6 +1,6 @@
 // import { useState } from 'react';
 
-// const CounterButtons = ({ count, setCount }) => {  
+// const CounterButtons = ({ count, setCount }) => {
 
 //   const increment = () => {
 //     setCount(count + 1);
@@ -25,7 +25,7 @@
 //       <p>Count is {count % 3 === 0 ? 'Multiple of 3' : 'Not a multiple of 3'}</p>
 //       <p>Count is {count % 2 === 0 ? 'Even' : 'Odd'}</p>
 //       <p>Count is {count > 0 ? 'Positive' : count < 0 ? 'Negative' : 'Zero'}</p>
-//       <p>Count is {count > 10 ? 'Greater than 10' : count < -10 ? 'Less than -10' : 'Between -10 and 10'}</p> 
+//       <p>Count is {count > 10 ? 'Greater than 10' : count < -10 ? 'Less than -10' : 'Between -10 and 10'}</p>
 //     </>
 //   );
 // }
@@ -42,8 +42,6 @@
 //   );
 // }
 
-
-
 //React Hooks
 // import React, { useState } from "react";
 
@@ -56,19 +54,27 @@
 //   </section>
 // }
 
-// export default App; 
-
-
+// export default App;
 
 //React useEffect
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 function App() {
-   useEffect(() => {
-     // This code runs after the component mounts
-     console.log("Component mounted");
-   }, []); // Empty dependency array means this runs once
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    // This code runs after the component mounts
+    console.log("Component mounted");
+  }, []); // Empty dependency array means this runs once
 
-   return <div>Hello, useEffect!</div>;
+  const handleClick = (event) => {
+    setCount((prev) => prev + 1);
+  };
+
+  return (
+    <>
+      <div>Hello, useEffect!</div>
+      <button onClick={handleClick}>Click here!</button>
+    </>
+  );
 }
- 
+
 export default App;
