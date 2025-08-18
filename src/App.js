@@ -43,15 +43,32 @@
 // }
 
 
-import React, { useState } from "react";
 
+//React Hooks
+// import React, { useState } from "react";
+
+// function App() {
+//   const [count, setCount] = useState(0);
+
+//   return <section>
+//     <h1>Count: {count}</h1>
+//     <button onClick={() => setCount(count + 1)}>Increment</button>
+//   </section>
+// }
+
+// export default App; 
+
+
+
+//React useEffect
+import React, { useEffect } from "react";
 function App() {
-  const [count, setCount] = useState(0);
+   useEffect(() => {
+     // This code runs after the component mounts
+     console.log("Component mounted");
+   }, []); // Empty dependency array means this runs once
 
-  return <section>
-    <h1>Count: {count}</h1>
-    <button onClick={() => setCount(count + 1)}>Increment</button>;
-  </section>
+   return <div>Hello, useEffect!</div>;
 }
-
-export default App; 
+ 
+export default App;
