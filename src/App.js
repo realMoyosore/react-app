@@ -62,8 +62,10 @@ function App() {
   const [count, setCount] = useState(0);
   useEffect(() => {
     // This code runs after the component mounts
-    console.log("Component mounted");
-  }, []); // Empty dependency array means this runs once
+    if (count > 0) {
+      console.log("Count:", count);
+    }
+  }, [count]); // Empty dependency array means this runs once
 
   const handleClick = (event) => {
     setCount((prev) => prev + 1);
