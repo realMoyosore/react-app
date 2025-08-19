@@ -122,6 +122,7 @@ const AuthContext = createContext({
     name: "Moyo Sore",
     email: "moyo@gmail.com",
   },
+  verified: false,
 });
 
 //Context Provider
@@ -134,6 +135,7 @@ function AuthProvider(props) {
           name: "Moyo Sore",
           email: "moyo@gmail.com",
         },
+        verified: true,
       }}>
       {props.children}
     </AuthContext.Provider>
@@ -142,16 +144,17 @@ function AuthProvider(props) {
 
 //User profile function
 const UserProfile = () => {
-  const { user } = useContext(AuthContext);
+  const { user, verified } = useContext(AuthContext);
 
   console.log(user);
 
   return (
     <>
       <h1>User Profile</h1>
-      <div>Username: @mo</div>
-      <div>Name: Moyo Sore</div>
-      <div>Email: moyo@gmail.com</div>
+      <div>Username: {user.username}</div>
+      <div>Name: {user.name}</div>
+      <div>Email: {user.email}</div>
+      <div>Verified: {verified ? "Yes" : "No"}</div>
     </>
   );
 };
