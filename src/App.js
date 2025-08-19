@@ -112,12 +112,40 @@
 
 // export default App;
 
-
 //React useContext
-import React from "react";
+import React, { useContext, createContext } from "react";
+
+//Context for App
+const AuthContext = createContext({
+  user: {
+    username: "mo",
+    name: "Moyo Sore",
+    email: "moyo@gmail.com",
+  },
+});
+
+//Context Provider
+function AuthProvider(props) {
+  return (
+    <AuthContext.Provider
+      value={{
+        user: {
+          username: "mo",
+          name: "Moyo Sore",
+          email: "moyo@gmail.com",
+        },
+      }}>
+      {props.children}
+    </AuthContext.Provider>
+  );
+}
 
 //User profile function
 const UserProfile = () => {
+  const { user } = useContext(AuthContext);
+
+  console.log(user);
+
   return (
     <>
       <h1>User Profile</h1>
@@ -126,14 +154,16 @@ const UserProfile = () => {
       <div>Email: moyo@gmail.com</div>
     </>
   );
-}
+};
 
 //Root Component
 function App() {
   return (
-    <div>
-      <UserProfile/>
-    </div>
+    <AuthProvider>
+      <div>
+        <UserProfile />
+      </div>
+    </AuthProvider>
   );
 }
 
