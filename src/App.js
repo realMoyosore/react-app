@@ -81,15 +81,33 @@
 
 // export default App;
 
-
 //React useState
-import React from "react";
+import React, { useState } from "react";
 
+//Create root component
 function App() {
+  //Define state
+  const [count, setCount] = useState(0);
 
-  return <section>
-    
-  </section>
+  //Function to increment the count
+  const handleIncrement = (event) => {
+    event.preventDefault();
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  //Function to decrement count
+  const handleDecrement = (event) => {
+    event.preventDefault();
+    setCount((prevCount => prevCount - 1));
+  };
+
+  return (
+    <section>
+      <h1>Count: {count}</h1>
+      <button onClick={handleIncrement}>Increment</button>
+      <button onClick={handleDecrement}>Decrement</button>
+    </section>
+  );
 }
 
 export default App;

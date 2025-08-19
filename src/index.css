@@ -53,6 +53,6 @@ button {
   width: 100%;
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 20px;
+  margin: 20px;
   cursor: pointer;
 }
