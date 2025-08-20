@@ -114,6 +114,7 @@
 
 //React useContext
 import React, { useContext, createContext, useState } from "react";
+import UseData from "./hooks/useCustomHook";
 
 //Context for App
 const AuthContext = createContext({
@@ -187,12 +188,14 @@ const UserProfile = () => {
 //Root Component
 function App() {
   return (
-    <AuthProvider>
-      <div className="main-page">
-        <UserProfile />
-        <useData />
-      </div>
-    </AuthProvider>
+    <>
+      <AuthProvider>
+        <div className="main-page">
+          <UserProfile />
+        </div>
+      </AuthProvider>
+      <UseData />
+      </>
   );
 }
 

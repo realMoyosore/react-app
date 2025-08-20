@@ -1,7 +1,7 @@
 // Custom hook
 import { useState, useEffect } from "react";
 
-const useData = (type) => {
+const UseData = (type) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -38,10 +38,14 @@ const useData = (type) => {
       setData(cars);
     } else if (type === "books") {
       setData(books);
+    } else {
+      setData([]);
     }
   }, [type]);
+    
+    console.log(data);
 
   return [data];
 };
 
-export default useData;
+export default UseData;
