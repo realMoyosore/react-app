@@ -190,6 +190,7 @@ function App() {
     <AuthProvider>
       <div className="main-page">
         <UserProfile />
+        <useData />
       </div>
     </AuthProvider>
   );
