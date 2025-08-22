@@ -85,6 +85,7 @@ function App() {
     <AuthProvider>
       <div className="main-page">
         <UserProfile />
+        <UserBio />
       </div>
     </AuthProvider>
   );
