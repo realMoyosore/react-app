@@ -71,7 +71,10 @@ const UserProfile = () => {
       <div>Name: {user.name}</div>
       <div>Email: {user.email}</div>
       <div>Verified: {verified ? "Yes" : "No"}</div>
-      <UserBio/>
+      <div>
+        <h2>Bio</h2>
+        <p>{user.bio}</p>
+      </div>
     </>
   );
 };
