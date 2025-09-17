@@ -49,18 +49,29 @@ function UserBio() {
     <div>
       <h1>User Bio</h1>
       <div>{user.bio}</div>
-      <form onSubmit={handleBioUpdate}>
-        <textarea
-          value={user.bio}
-          onChange={(e) => setUser({ ...user, bio: e.target.value })}
-        />
-        <button type="submit">Update Bio</button>
-      </form>
+ 
     </div>
   );
 }
 
+//User profile component
+const UserProfile = () => {
+  const { user, verified } = useContext(AuthContext);
 
+  return (
+    <>
+      <h1>User Profile</h1>
+      <div>Username: {user.username}</div>
+      <div>Name: {user.name}</div>
+      <div>Email: {user.email}</div>
+      <div>Verified: {verified ? "Yes" : "No"}</div>
+      <div>
+        <h2>Bio</h2>
+        <p>{user.bio}</p>
+      </div>
+    </>
+  );
+};
 
 //Root Component
 function App() {
