@@ -81,26 +81,6 @@
 
 // export default App;
 
-//React useState
-// import React, { useState } from "react";
-
-// //Create root component
-// function App() {
-//   //Define state
-//   const [count, setCount] = useState(0);
-
-//   //Function to increment the count
-//   const handleIncrement = (event) => {
-//     event.preventDefault();
-//     setCount((prevCount) => prevCount + 1);
-//   };
-
-//   //Function to decrement count
-//   const handleDecrement = (event) => {
-//     event.preventDefault();
-//     setCount((prevCount => prevCount - 1));
-//   };
-
 
 //React useContext
 import React, { useContext, createContext, useState } from "react";
