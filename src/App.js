@@ -56,31 +56,6 @@
 
 // export default App;
 
-//React useEffect
-// import React, { useEffect, useState } from "react";
-// function App() {
-//   const [count, setCount] = useState(0);
-//   useEffect(() => {
-//     // This code runs after the component mounts
-//     if (count > 0) {
-//       console.log("Count:", count);
-//     }
-//   }, [count]); // Empty dependency array means this runs once
-
-//   const handleClick = (event) => {
-//     setCount((prev) => prev + 1);
-//   };
-
-//   return (
-//     <>
-//       <div>Hello, useEffect!</div>
-//       <button onClick={handleClick}>Click here!</button>
-//     </>
-//   );
-// }
-
-// export default App;
-
 
 //React useContext
 import React, { useContext, createContext, useState } from "react";
