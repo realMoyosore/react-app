@@ -126,6 +126,4 @@ This project is licensed for education under AltSchool
 
 ---
 
-## Contact
-
 For questions or feedback, please reach out via [GitHub Issues](https://github.com/realMoyosore/react-app/issues).
