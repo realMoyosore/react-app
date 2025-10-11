@@ -42,7 +42,7 @@
 //   );
 // }
 
-//React Hooks
+// //React Hooks
 // import React, { useState } from "react";
 
 // function App() {
@@ -56,7 +56,7 @@
 
 // export default App;
 
-//React useEffect
+// //React useEffect
 // import React, { useEffect, useState } from "react";
 // function App() {
 //   const [count, setCount] = useState(0);
@@ -81,7 +81,7 @@
 
 // export default App;
 
-//React useState
+// // React useState
 // import React, { useState } from "react";
 
 // //Create root component
