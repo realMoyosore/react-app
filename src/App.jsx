@@ -4,7 +4,7 @@ import React, { useContext, createContext, useState } from "react";
 const AuthContext = createContext({
   user: {
     username: "mo",
-    name: "Moyo Sore",
+    name: "Moyosore Oluwa",
     email: "moyo@gmail.com",
     bio: "A passionate developer.",
   },
@@ -40,7 +40,7 @@ function UserBio() {
     setUser((prev) => {
       return {
         ...prev,
-        bio: "His Excellency has also serve as the Governor of Lagos state many years ago",
+        bio: "His Excellency has also served as the Governor of Lagos state many years ago",
       };
     });
   };
