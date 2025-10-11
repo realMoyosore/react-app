@@ -119,7 +119,3 @@ react-app
 ## Contributing
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
-
----
-
-For questions or feedback, please reach out via [GitHub Issues](https://github.com/realMoyosore/react-app/issues).
