@@ -17,7 +17,15 @@
 //       <button onClick={increment}>Increment</button>
 //       <button onClick={decrement}>Decrement</button>
 //       <p>Current Count: {count}</p>
-
+//       <p>Count is {count % 2 === 0 ? 'Even' : 'Odd'}</p>
+//       <p>Count is {count > 0 ? 'Positive' : count < 0 ? 'Negative' : 'Zero'}</p>
+//       <p>Count is {count > 10 ? 'Greater than 10' : count < -10 ? 'Less than -10' : 'Between -10 and 10'}</p>
+//       <p>Count is {count === 0 ? 'Zero' : count > 0 ? 'Positive' : 'Negative'}</p>
+//       <p>Count is {count % 5 === 0 ? 'Multiple of 5' : 'Not a multiple of 5'}</p>
+//       <p>Count is {count % 3 === 0 ? 'Multiple of 3' : 'Not a multiple of 3'}</p>
+//       <p>Count is {count % 2 === 0 ? 'Even' : 'Odd'}</p>
+//       <p>Count is {count > 0 ? 'Positive' : count < 0 ? 'Negative' : 'Zero'}</p>
+//       <p>Count is {count > 10 ? 'Greater than 10' : count < -10 ? 'Less than -10' : 'Between -10 and 10'}</p>
 //     </>
 //   );
 // }
