@@ -1,16 +1,16 @@
 // import { useState } from 'react';
 
-// const CounterButtons = ({ count, setCount }) => {
+const CounterButtons = ({ count, setCount }) => {
 
-//   const increment = () => {
-//     setCount(count + 1);
-//   }
+  const increment = () => {
+    setCount(count + 1);
+  }
 
-//   const decrement = () => {
-//     setCount(count - 1);
-//   }
+  const decrement = () => {
+    setCount(count - 1);
+  }
 
-//   // Conditions to display different messages based on count
+  // Conditions to display different messages based on count
 
 //   return (
 //     <>
