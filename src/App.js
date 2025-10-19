@@ -134,6 +134,7 @@ function AuthProvider(props) {
     email: "jagaban@gmail.com",
     bio: "His Excellency, Ashiwaju Bola Ahmed Tinubu is the current serving President of the Federal Republic of Nigeria.",
     age: 70,
+    lga: "Lagos",
   });
 
   return (
