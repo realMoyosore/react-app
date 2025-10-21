@@ -162,14 +162,14 @@ function UserBio() {
     });
   };
 
-  return (
-    <div>
-      <h1>User Bio</h1>
-      <div>{user.bio}</div>
-      <button onClick={handleBioUpdate}>Update Bio</button>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <h1>User Bio</h1>
+//       <div>{user.bio}</div>
+//       <button onClick={handleBioUpdate}>Update Bio</button>
+//     </div>
+//   );
+// }
 
 //User profile component
 const UserProfile = () => {
