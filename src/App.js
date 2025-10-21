@@ -171,21 +171,7 @@ function UserBio() {
 //   );
 // }
 
-//User profile component
-const UserProfile = () => {
-  const { user, verified } = useContext(AuthContext);
-
-  return (
-    <>
-      <h1>User Profile</h1>
-      <div>Username: {user.username}</div>
-      <div>Name: {user.name}</div>
-      <div>Email: {user.email}</div>
-      <div>Verified: {verified ? "Yes" : "No"}</div>
-      <UserBio/>
-    </>
-  );
-};
+// git
 
 
 
