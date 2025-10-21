@@ -35,9 +35,5 @@ button {
   border-radius: 18px;
   padding: 10px 32px;
   max-width: 200px;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 20px;
-  cursor: pointer;
+
 }
