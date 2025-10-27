@@ -17,6 +17,11 @@ const UseData = (type) => {
         name: "BMW",
         year: "2021",
       },
+      {
+        id: 4,
+        name: "AUDI",
+        year: "2022",
+      },
     ];
 
     const books = [
@@ -42,8 +47,8 @@ const UseData = (type) => {
       setData([]);
     }
   }, [type]);
-    
-    console.log(data);
+
+  console.log(data);
 
   return [data];
 };
