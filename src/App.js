@@ -30,7 +30,7 @@ const CounterButtons = ({ count, setCount }) => {
   );
 }
 
-// // Main component
+// Main component
 // export default function MyApp() {
 // const [count, setCount] = useState(0);
 
