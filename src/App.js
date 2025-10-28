@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import React, { useContext, createContext} from "react";
+import UseData from "./hooks/useCustomHook";
 
 const CounterButtons = ({ count, setCount }) => {
 
@@ -113,8 +115,8 @@ const CounterButtons = ({ count, setCount }) => {
 // export default App;
 
 //React useContext
-import React, { useContext, createContext, useState } from "react";
-import UseData from "./hooks/useCustomHook";
+// import React, { useContext, createContext} from "react";
+// import UseData from "./hooks/useCustomHook";
 
 //Context for App
 const AuthContext = createContext({
