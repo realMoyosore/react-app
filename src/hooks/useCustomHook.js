@@ -37,6 +37,12 @@ const UseData = (type) => {
         author: "J.R.R. Tolkien",
         year: "1937",
       },
+            {
+        id: 3,
+        name: "Lord of the Rings",
+        author: "J.R.R. Tolkien",
+        year: "1944",
+      },
     ];
 
     if (type === "cars") {
