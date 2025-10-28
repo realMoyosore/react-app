@@ -33,16 +33,16 @@ const CounterButtons = ({ count, setCount }) => {
 }
 
 // Main component
-export default function MyApp() {
-const [count, setCount] = useState(0);
+// export default function MyApp() {
+// const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <h1>Count Up {count} Count Down</h1>
-      <CounterButtons count={count} setCount={setCount}/>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <h1>Count Up {count} Count Down</h1>
+//       <CounterButtons count={count} setCount={setCount}/>
+//     </>
+//   );
+// }
 
 // //React Hooks
 // import React, { useState } from "react";
@@ -205,4 +205,4 @@ function App() {
   );
 }
 
-// export default App;
+export default App;
