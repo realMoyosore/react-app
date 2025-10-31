@@ -122,7 +122,8 @@ import UseData from "./hooks/useCustomHook";
 const AuthContext = createContext({
   user: {
     username: "mo",
-    name: "Moyosore Oluwa",
+    "first name": "Moyosore",
+    "last name": "Oluwa",
     email: "moyo@gmail.com",
   },
   verified: false,
