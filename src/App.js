@@ -2,12 +2,6 @@ import { useState } from 'react';
 import React, { useContext, createContext} from "react";
 import UseData from "./hooks/useCustomHook";
 
-
-
-//React useContext
-// import React, { useContext, createContext} from "react";
-// import UseData from "./hooks/useCustomHook";
-
 //Context for App
 const AuthContext = createContext({
   user: {
