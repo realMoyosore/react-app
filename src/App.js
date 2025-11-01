@@ -190,8 +190,6 @@ const UserProfile = () => {
   );
 };
 
-
-
 //Root Component
 function App() {
   return (
