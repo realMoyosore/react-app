@@ -3,56 +3,7 @@ import React, { useContext, createContext} from "react";
 import UseData from "./hooks/useCustomHook";
 
 
-// Main component
-// export default function MyApp() {
-// const [count, setCount] = useState(0);
 
-//   return (
-//     <>
-//       <h1>Count Up {count} Count Down</h1>
-//       <CounterButtons count={count} setCount={setCount}/>
-//     </>
-//   );
-// }
-
-// //React Hooks
-// import React, { useState } from "react";
-
-// function App() {
-//   const [count, setCount] = useState(0);
-
-//   return <section>
-//     <h1>Count: {count}</h1>
-//     <button onClick={() => setCount(count + 1)}>Increment</button>
-//   </section>
-// }
-
-// export default App;
-
-// //React useEffect
-// import React, { useEffect, useState } from "react";
-// function App() {
-//   const [count, setCount] = useState(0);
-//   useEffect(() => {
-//     // This code runs after the component mounts
-//     if (count > 0) {
-//       console.log("Count:", count);
-//     }
-//   }, [count]); // Empty dependency array means this runs once
-
-//   const handleClick = (event) => {
-//     setCount((prev) => prev + 1);
-//   };
-
-//   return (
-//     <>
-//       <div>Hello, useEffect!</div>
-//       <button onClick={handleClick}>Click here!</button>
-//     </>
-//   );
-// }
-
-// export default App;
 
 // // React useState
 // import React, { useState } from "react";
