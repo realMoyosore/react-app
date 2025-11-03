@@ -1,7 +1,15 @@
 import React, { useContext, createContext, useState } from "react";
 
 //Context for App
-
+const AuthContext = createContext({
+  user: {
+    username: "mo",
+    name: "Moyosore Oluwa",
+    email: "moyo@gmail.com",
+    bio: "A passionate developer.",
+  },
+  verified: false,
+});
 
 //Context Provider
 function AuthProvider(props) {
