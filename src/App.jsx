@@ -45,19 +45,7 @@ function UserBio() {
     });
   };
 
-  return (
-    <div>
-      <h1>User Bio</h1>
-      <div>{user.bio}</div>
-      <form onSubmit={handleBioUpdate}>
-        <textarea
-          value={user.bio}
-          onChange={(e) => setUser({ ...user, bio: e.target.value })}
-        />
-        <button type="submit">Update Bio</button>
-      </form>
-    </div>
-  );
+
 }
 
 //User profile component
