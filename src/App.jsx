@@ -20,16 +20,7 @@ function AuthProvider(props) {
     bio: "His Excellency, Ashiwaju Bola Ahmed Tinubu is the current serving President of the Federal Republic of Nigeria.",
   });
 
-  return (
-    <AuthContext.Provider
-      value={{
-        user: user,
-        verified: true,
-        setUsers: setUser,
-      }}>
-      {props.children}
-    </AuthContext.Provider>
-  );
+
 }
 
 //User Bio Component
